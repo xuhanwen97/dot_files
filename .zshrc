@@ -87,12 +87,12 @@ source $ZSH/oh-my-zsh.sh
 # Function
 # Runs whenever pwd changes
 function chpwd() {
-	clear; pwd; ls -G
+	clear; pwd; ls -Ga
 }
 
 # Aliases
 # shell command aliases
-alias ls="clear; pwd; ls -G"
+alias ls="clear; pwd; ls -Ga"
 
 # SSH Aliases
 alias sshMichael='ssh devbox'
