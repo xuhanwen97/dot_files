@@ -12,5 +12,5 @@ highlight LineNr ctermfg=43        "changes line numbers on the side to a beauti
 
 set backspace=indent,eol,start
 
-source ./.xvimrc
+source ~/dot_files/.xvimrc
 
