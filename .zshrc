@@ -92,7 +92,7 @@ function chpwd() {
 
 # Aliases
 # shell command aliases
-alias ls="clear; pwd; ls -Ga"
+alias ls="clear; pwd; ls -G --color"
 
 # SSH Aliases
 alias sshMichael='ssh devbox'
