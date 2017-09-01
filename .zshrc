@@ -113,7 +113,7 @@ alias ssIos='cd ~/SpaceSequencing/IOS/space_sequencing/ios'
 alias merchAndroid='cd ~/merchlogix_mobile/merchlogix_mobile'
 
 # Git Settings
-git config --global user.name "Michael Xu"
-git config --global user.email "michael@neadwerx.com"
+git config --global user.name "xuhanwen97"
+git config --global user.email "xuhanwen97@gmail.com"
 
 # ssh-add -A
