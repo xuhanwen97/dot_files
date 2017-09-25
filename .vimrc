@@ -31,3 +31,5 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 
 " Removes trailing whitespace on write for php files
 autocmd BufWritePre *.php :%s/\s\+$//e
+autocmd BufWritePre *.html :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/\s\+$//e
