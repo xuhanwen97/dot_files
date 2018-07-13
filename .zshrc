@@ -112,8 +112,25 @@ alias ssAndroid='cd ~/SpaceSequencing/Android/space_sequencing/android/SpaceSequ
 alias ssIos='cd ~/SpaceSequencing/IOS/space_sequencing/ios'
 alias merchAndroid='cd ~/merchlogix_mobile/merchlogix_mobile'
 
+alias school='cd ~/Google\ Drive/College/GTL\ Summer\ 2017'
+alias cs2316='cd ~/Google\ Drive/College/Fall\ 2017/CS2316'
+alias cs1332='cd ~/Google\ Drive/College/Spring\ 2018/CS\ 1332'
+alias cs2110='cd ~/Google\ Drive/College/Spring\ 2018/CS\ 2110'
+alias cs2340='cd ~/Google\ Drive/College/Spring\ 2018/CS\ 2340'
+alias cs2340project='cd /Users/xu/Documents/CS2340_Project'
+alias summer2018='cd ~/Google\ Drive/College/Summer\ 2018'
+alias cs2110ta='cd ~/Google\ Drive/College/CS\ 2110\ TA'
+alias cs2110ta_projects='cd ~/CS2110TA_projects'
+alias cs3600='cd ~/Google\ Drive/College/Summer\ 2018/CS\ 3600'
+alias projects='cd ~/Google\ Drive/Personal_Projects'
+alias python2=python2.7
+alias demograder='cp ../grader-summer18-tests-1.5.jar ./; java -jar grader-summer18-tests-1.5.jar'
+alias gs='git status'
+alias gcam='git commit -am'
+
+
 # Git Settings
-git config --global user.name "xuhanwen97"
+git config --global user.name "Hanwen Xu"
 git config --global user.email "xuhanwen97@gmail.com"
 
-# ssh-add -A
+export PATH="/Users/xu/miniconda3/bin:$PATH"
