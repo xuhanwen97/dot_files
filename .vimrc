@@ -33,3 +33,29 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 autocmd BufWritePre *.php :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
+
+
+" Disables smart indent for python
+au! FileType python setl nosmartindent
+
+set pastetoggle=<F10>
+
+" VimPlug
+call plug#begin('~/.vim/VimPlug')
+
+" Auto completes brackets and parens
+Plug 'https://github.com/jiangmiao/auto-pairs'
+
+" Auto closes HTML tags
+Plug 'https://github.com/alvan/vim-closetag'
+
+" Commenting Plugin
+Plug 'scrooloose/nerdcommenter'
+
+" Tab completion python libraries
+Plug 'https://github.com/rkulla/pydiction'
+
+" Tab completion general vim
+Plug 'https://github.com/ervandew/supertab'
+
+call plug#end()
