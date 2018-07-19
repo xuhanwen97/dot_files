@@ -100,9 +100,10 @@ alias sshRoot='ssh rdevbox'
 alias fixSSH='ssh-add'
 
 # dot file aliases 
-alias vimrc='vim ~/.vimrc'
-alias xvimrc='vim ~/.xvimrc'
-alias zshrc='vim ~/.zshrc'
+alias vimrc='vim ~/dot_files/.vimrc'
+alias xvimrc='vim ~/dot_files/.xvimrc'
+alias zshrc='vim ~/dot_files/.zshrc'
+
 alias rlzshrc='. ~/.zshrc'
 
 # Commonly used directories aliases
