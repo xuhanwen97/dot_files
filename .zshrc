@@ -128,10 +128,25 @@ alias python2=python2.7
 alias demograder='cp ../grader-summer18-tests-1.5.jar ./; java -jar grader-summer18-tests-1.5.jar'
 alias gs='git status'
 alias gcam='git commit -am'
-
+alias gp='git pull'
+alias fixds='find . -name '\''.DS_Store'\'' -type f -delete'
+alias fall2018='cd ~/Google\ Drive/College/Fall\ 2018'
+alias start4646='source ~/Google\ Drive/College/Fall\ 2018/CS\ 4646/ml4t-venv/bin/activate'
+alias i2p='cd /Users/hanwenxu/projects/Unfoldit-iOS'
 
 # Git Settings
 git config --global user.name "Hanwen Xu"
 git config --global user.email "xuhanwen97@gmail.com"
 
 export PATH="/Users/xu/miniconda3/bin:$PATH"
+pylc3DockerShell() {
+	docker run -it --rm -v "$(pwd):/usr/src/grader" -v "$HOME/.zucchini:/root/.zucchini" ausbin/zucc bash
+}
+
+cs2110docker() {
+    . ~/Google\ Drive/College/CS\ 2110\ TA/cs2110docker.sh
+}
+
+stopcs2110docker() {
+    . ~/Google\ Drive/College/CS\ 2110\ TA/cs2110docker.sh stop
+}

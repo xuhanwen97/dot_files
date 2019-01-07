@@ -40,6 +40,9 @@ au! FileType python setl nosmartindent
 
 set pastetoggle=<F10>
 
+" Disables the audio bell
+set visualbell
+
 " VimPlug
 call plug#begin('~/.vim/VimPlug')
 
