@@ -1,5 +1,5 @@
-:noremap <C-j> 10jzz
-:noremap <C-k> 10kzz
+:noremap <C-j> 5jzz
+:noremap <C-k> 5kzz
 :noremap <C-o> o<Esc>
 :set nu
 :set relativenumber                 " have dynamic numbers on the side of file
