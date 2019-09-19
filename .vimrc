@@ -1,4 +1,15 @@
-source ~/dot_files/.xvimrc
+:noremap <C-j> 5jzz
+:noremap <C-k> 5kzz
+:noremap <C-o> o<Esc>
+:set nu
+:set relativenumber                 " have dynamic numbers on the side of file
+highlight LineNr ctermfg=43
+
+:set hlsearch
+" Press Space to turn off highlighting and clear any message already displayed "
+:noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+:set scrolloff=5
+
 
 set number                         " have a list of numbers on the side of filei
 
