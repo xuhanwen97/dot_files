@@ -123,7 +123,8 @@ alias summer2018='cd ~/Google\ Drive/College/Summer\ 2018'
 alias cs2110ta='cd ~/Google\ Drive/College/CS\ 2110\ TA'
 alias cs2110ta_projects='cd ~/CS2110TA_projects'
 alias cs3600='cd ~/Google\ Drive/College/Summer\ 2018/CS\ 3600'
-alias projects='cd ~/Google\ Drive/Personal_Projects'
+alias projects='cd ~/projects'
+alias otter='cd ~/projects/otter_pond'
 alias python2=python2.7
 alias demograder='cp ../grader-summer18-tests-1.5.jar ./; java -jar grader-summer18-tests-1.5.jar'
 alias gs='git status'
@@ -131,6 +132,8 @@ alias gcam='git commit -am'
 alias gp='git pull'
 alias fixds='find . -name '\''.DS_Store'\'' -type f -delete'
 alias fall2018='cd ~/Google\ Drive/College/Fall\ 2018'
+alias spring2019='cd ~/Google\ Drive/College/Spring\ 2019'
+alias fall19='cd ~/Google\ Drive/College/Fall\ 2019'
 alias start4646='source ~/Google\ Drive/College/Fall\ 2018/CS\ 4646/ml4t-venv/bin/activate'
 alias i2p='cd /Users/hanwenxu/projects/Unfoldit-iOS'
 
@@ -149,4 +152,16 @@ cs2110docker() {
 
 stopcs2110docker() {
     . ~/Google\ Drive/College/CS\ 2110\ TA/cs2110docker.sh stop
+}
+
+# Param 1 is the token, Param 2 is the email
+amEmailList() {
+    curl -X POST "https://prod-api.theotterpond.com/email_lists/all@gtdeltachi.com/subscribe" -H "accept: application/json" -H "authorization: Bearer $1" -H "Content-Type: application/json" -d "{ \"user_email\": \"$2\"}"
+    curl -X POST "https://prod-api.theotterpond.com/email_lists/com@gtdeltachi.com/subscribe" -H "accept: application/json" -H "authorization: Bearer $1" -H "Content-Type: application/json" -d "{ \"user_email\": \"$2\"}"
+    curl -X POST "https://prod-api.theotterpond.com/email_lists/am@gtdeltachi.com/subscribe" -H "accept: application/json" -H "authorization: Bearer $1" -H "Content-Type: application/json" -d "{ \"user_email\": \"$2\"}"
+    curl -X POST "https://prod-api.theotterpond.com/email_lists/cookies@gtdeltachi.com/subscribe" -H "accept: application/json" -H "authorization: Bearer $1" -H "Content-Type: application/json" -d "{ \"user_email\": \"$2\"}"
+}
+
+addToAMList() {
+    curl -X POST "https://prod-api.theotterpond.com/email_lists/am@gtdeltachi.com/subscribe" -H "accept: application/json" -H "authorization: Bearer $1" -H "Content-Type: application/json" -d "{ \"user_email\": \"$2\"}"
 }

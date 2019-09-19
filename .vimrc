@@ -1,6 +1,5 @@
 source ~/dot_files/.xvimrc
 
-set relativenumber                 " have dynamic numbers on the side of file
 set number                         " have a list of numbers on the side of filei
 
 " Set a colorscheme
